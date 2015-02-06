@@ -1,8 +1,6 @@
-
 [user]
-  name = Amiel Martin
-  email = amiel@actionsprout.com
-  signingkey = 0DC8CE64
+  name = Tim White
+  email = timwhite47@gmail.com
 
 [diff "exif"]
   # brew install exiftool
@@ -52,12 +50,6 @@
 [push]
   default = tracking
 
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
-  prompt = false
-[diff]
-  tool = Kaleidoscope
 [mergetool]
   keepBackup = false
   prompt = false
@@ -127,9 +119,6 @@
 
 [mergetool "fugitive"]
   cmd = vim -f -c \"Gdiff\" \"$MERGED\"
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustExitCode = true
 
 [credential]
   helper = osxkeychain
